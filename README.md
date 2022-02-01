@@ -1,0 +1,1 @@
+Atividade de aprendizado de HTML, CSS e Javascript.Proposta: criar um site para uma empresa de jogos.
