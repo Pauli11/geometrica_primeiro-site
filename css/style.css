@@ -1,5 +1,10 @@
-/*O asterisco abaixo indica que as configurações nele contidas valem para todo o site */
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Nova+Cut&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&family=Megrim&family=Nova+Cut&display=swap');
+
+
 *{
+  /*O asterisco abaixo indica que as configurações nele contidas valem para todo o site */
     margin: o;
     padding: o;
     /*padding mede a distancia entre o conteudo de um elemento e a sua borda. No caso deixamos zerado por padrao para todos  */
@@ -7,21 +12,78 @@
     /* o box sizing zera as configuracoes pre definidas dos box do site, assim eu mesma irei configura-los*/
  }
 header{
-background-color:whitesmoke;    
+background-color:whitesmoke; 
+height: 110px;
 }
 
 .container-grid{
   width: 1200px;
-  height: 120px;
+  height: 100%;
   margin: auto;
       /*Para facilitar a organizacao das informacoes e para uma boa pratica entre web-devs, coloca-se sempre infos de altura, largura, posicao antes dos demais ajustes de um elemento */
   display: flex;
       /*Facilita a organizacao dos elementos e "desbloqueia" outras funcionalidades interessantes*/
-  justify-content:space-around;
   align-items: center;
+  justify-content: space-between;
+  background-image: url(../img/Header\ -\ Padrão.png);
+  background-repeat:no-repeat;
+  background-size:auto;       
   }
+
+
 .titulo-site {
-width:320px;
-height: 100px;
-color:black;
+  height: 120px;
+  color:000000;
+  font-family:'Megrim', cursive;
+  font-size: 30px;
+  font-weight:200;
+  text-transform: uppercase;
+  }
+
+.menu a {
+    width:620px;
+    height: 120px;
+    color:#FFFA7B;
+    text-decoration: none;  
+    font family: 'Nova Cut', cursive;
+    font-size:30px;
+      justify-content:space-between;
 }
+
+.busca {
+  font-family:'Gemunu Libre', sans-serif;
+  font: size 20px;
+}
+
+.banner{ 
+height: 230px;
+background-image:url(../img/banner_home_recorte.jpg);
+background-size:cover;
+}
+  
+.texto-banner {
+color:white;
+font-family: 'Gemunu Libre',sans-serif;
+font-size: 25px;
+font-weight: 300;
+justify-content: space-between;
+align-content: space-between;
+}
+
+.texto-banner h1{
+  color: #FFFA7B;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.posicao-texto{
+justify-content:center;
+align-items:initial;
+}
+
+
+
+
+ 
+
+ 
