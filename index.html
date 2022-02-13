@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <!-----Essa linha de cima vem pronta quando abre-se automaticamente a estrutura básica do html via Vs Code, diz respeito a compatibilidade do site com o navegador internet explorer-->
-        <meta name="viewport" content="widht=device-width, inicial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!------------ Essa linha de cima mostra: 1) viewport diz que vai se adaptar a tela do usuario, 2)content diz que vai se adaptar ao tipo de dispositivo que for usado e a escala inicial em 1.0 se refere a usar 100% da tela--> 
         <meta name="description" content="Site fictício de aprendizagem do front end, pelo SENAI"/>
         <meta name="keywords" content="HTML,CSS,Javascript, SENAI, Geometria oriental, jogos, games, learning javascript, learning CSS, learning html"/>
@@ -30,14 +30,17 @@
                          <h1>Geométrica</h1>
                     </div>
                     <nav class="menu">
+                        <div class="botoes">
                          <a href="login.html">Login</a>
                          <a href="jogar.html">Jogar</a>
                          <a href ="pagina_blog.html">Blog</a>
+                        </div>
+                         <div class="busca">
+                            <a href="busca.html">Buscar</a> 
+                        </div>
                     </nav>
-                    <div class="busca">
-                        <a href="busca.html">Buscar</a> 
-                    </div>
-                </div>
+                    
+              </div>              
             </header>
             <div class="banner">
                 <div class="container-grid posicao-texto">
@@ -48,11 +51,11 @@
                     </div>
                 </div>
             </div>
-    <section class="conteudo-body"> 
-        <section class="o-que-e">
+    <section class=" container grid conteudo-body"> 
+        <div class="o-que-e">
                 <h2>O que é geométrica?</h2>
                 <p>Geométrica é um jogo para quem gosta de desafios lógicos,num ambiente visualmente deslumbrante</p>
-        </section> 
+        </div> 
 
         <section class="como-jogar">
              <h2>Como jogar?</h2>

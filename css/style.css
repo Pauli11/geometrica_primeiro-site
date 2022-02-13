@@ -8,62 +8,79 @@
     box-sizing:border-box ;
     /* o box sizing zera as configuracoes pre definidas dos box do site, assim eu mesma irei configura-los*/
  }
-header {
-background-color:whitesmoke; 
-height: 140px;
-width: 1200px;
-background-image: url(../img/header-novo.png);
-background-repeat:no-repeat;
-background: size 1200px; 
-}
 
 .container-grid{
   width: 1200px;
   height: 100%;
   margin: auto;
-      /*Para facilitar a organizacao das informacoes e para uma boa pratica entre web-devs, coloca-se sempre infos de altura, largura, posicao antes dos demais ajustes de um elemento */
+  /*___Para facilitar a organizacao das informacoes e para uma boa pratica entre web-devs, coloca-se sempre infos de altura, largura, posicao antes dos demais ajustes de um elemento */
   display: flex;
-      /*Facilita a organizacao dos elementos e "desbloqueia" outras funcionalidades interessantes*/
+  /*____Facilita a organizacao dos elementos e "desbloqueia" outras funcionalidades interessantes*/
   align-items: center;      
-  justify-content: space-between;
-        
+  justify-content:space-between;
 }
 
-  .titulo-site {
-    color:000000;
-    font-family:'Megrim', cursive;
-    font-size:150px;    
-    font-weight:300;
-    text-transform: uppercase;
-  }
+header {
+  background-color:whitesmoke; 
+  height: 150px;
+  background-image: url(../img/header-novo.png);
+  background-repeat:no-repeat;
+  background-size: 100%;
+  background-position-y: top;
+}
+.titulo-site {
+  width: max-content;
+  color:000000;
+  font-family:'Megrim', cursive;
+  font-size:  125px;    
+  font-weight:300;
+  text-transform: uppercase;
+  justify-self:end;
+}
 
-  .menu a {
+  .botoes a {
     width:620px;
     height: 120px;
     color:#FFFA7B;
     text-decoration: none;  
     font-family: 'Nova Cut', cursive;
-    font-size:30px;
+    font-size:  23px;
     justify-content:space-between;
-    justify-content:right; 
     background-image: url(../img/botoes-circulares.png);
-    background-size:cover; 
+    background-position-x: center;
     background-repeat: no-repeat;
-    padding: 10px;
-    font-size: 30;
+    background-size: 65px;  
+    padding:19px; 
+    position: relative;
+           
   }
 
-
-.busca {
+.busca a {
+  width: 384px;
+  height:fit-content;
   font-family:'Gemunu Libre', sans-serif;
-  font: size 20px;
+  font: size 25px;
+  text-decoration: none;   
+  position: absolute;
+  padding: 19px;
+  color: black;
+  background-image: url(../img/Busca.png);
+  background-repeat: no-repeat;
+  background-size:auto;
+  background-position-x:center;
+  margin-top: 30px;
+  
+ 
 }
+
 /*----------fim da sessao header---------- */
 
 .banner{ 
 height: 230px;
-width: 1200px;
-background-image:url(../img/banner_home_recorte.jpg);
+width: 100%;
+background-image:url(../img/Banner.png);
+background-repeat: no-repeat;
+justify-content: center;
 }
   
 .texto-banner {
@@ -72,7 +89,6 @@ font-family: 'Gemunu Libre',sans-serif;
 font-size: 25px;
 font-weight: 300;
 justify-content: space-between;
-
 }
 
 .texto-banner h2{
@@ -85,15 +101,20 @@ justify-content: space-between;
 justify-content:center;
 align-items:center;
 }
+
 /* -------- fim da sessao banner---------*/
 
 .conteudo-body h2{
 font-family: 'Nova Cut', cursive;
-font-size: 40px;
+font-size: 30px;
 }
 
 .conteudo-body p{
 font-family:'Gemunu libre', sans-serif;
-font-size: 35px;
+font-size: 25px;
+}
+
+.conteudo-body o-que-e{
+
 
 }
