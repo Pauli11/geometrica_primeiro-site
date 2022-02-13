@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&family=Megrim&family=Nova+Cut&display=swap');
 
-
 *{
   /*O asterisco abaixo indica que as configurações nele contidas valem para todo o site */
     margin: o;
@@ -9,10 +8,13 @@
     box-sizing:border-box ;
     /* o box sizing zera as configuracoes pre definidas dos box do site, assim eu mesma irei configura-los*/
  }
-header{
+header {
 background-color:whitesmoke; 
 height: 140px;
 width: 1200px;
+background-image: url(../img/header-novo.png);
+background-repeat:no-repeat;
+background: size 1200px; 
 }
 
 .container-grid{
@@ -24,35 +26,32 @@ width: 1200px;
       /*Facilita a organizacao dos elementos e "desbloqueia" outras funcionalidades interessantes*/
   align-items: center;      
   justify-content: space-between;
-  background-image: url(../img/header-novo.png);
-  background-repeat:no-repeat;
-  background: size 1200px;        
-  }
+        
+}
 
   .titulo-site {
     color:000000;
     font-family:'Megrim', cursive;
-    font-size: 200px;
-    font-weight:200;
+    font-size:150px;    
+    font-weight:300;
     text-transform: uppercase;
-    }
+  }
 
   .menu a {
     width:620px;
     height: 120px;
     color:#FFFA7B;
     text-decoration: none;  
-    font family: 'Nova Cut', cursive;
+    font-family: 'Nova Cut', cursive;
     font-size:30px;
     justify-content:space-between;
     justify-content:right; 
-    background-image: url(../img/botoes-circulares.png);;
+    background-image: url(../img/botoes-circulares.png);
     background-size:cover; 
     background-repeat: no-repeat;
-    padding: 15px;
+    padding: 10px;
     font-size: 30;
   }
-
 
 
 .busca {
@@ -60,10 +59,11 @@ width: 1200px;
   font: size 20px;
 }
 /*----------fim da sessao header---------- */
+
 .banner{ 
 height: 230px;
+width: 1200px;
 background-image:url(../img/banner_home_recorte.jpg);
-background-size:cover;
 }
   
 .texto-banner {
@@ -72,10 +72,10 @@ font-family: 'Gemunu Libre',sans-serif;
 font-size: 25px;
 font-weight: 300;
 justify-content: space-between;
-align-content: space-between;
+
 }
 
-.texto-banner h1{
+.texto-banner h2{
   color: #FFFA7B;
   font-size: 50px;
   font-weight: bold;
@@ -83,14 +83,17 @@ align-content: space-between;
 
 .posicao-texto{
 justify-content:center;
-align-items:initial;
+align-items:center;
 }
 /* -------- fim da sessao banner---------*/
 
-.lancamentos-container{
-  display: flex;
+.conteudo-body h2{
+font-family: 'Nova Cut', cursive;
+font-size: 40px;
 }
 
- 
+.conteudo-body p{
+font-family:'Gemunu libre', sans-serif;
+font-size: 35px;
 
- 
+}
