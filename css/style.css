@@ -21,74 +21,65 @@
 }
 
 header {
-  background-color:whitesmoke; 
+  width: 1200px;
+  background-color:#EEFFFD; 
   height: 150px;
   background-image: url(../img/header-novo.png);
   background-repeat:no-repeat;
   background-size: 100%;
   background-position-y: top;
 }
-.titulo-site {
-  width: max-content;
-  color:000000;
-  font-family:'Megrim', cursive;
-  font-size:  125px;    
-  font-weight:300;
-  text-transform: uppercase;
-  justify-self:end;
-}
 
-  .botoes a {
-    width:620px;
-    height: 120px;
-    color:#FFFA7B;
-    text-decoration: none;  
-    font-family: 'Nova Cut', cursive;
-    font-size:  23px;
-    justify-content:space-between;
-    background-image: url(../img/botoes-circulares.png);
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-size: 65px;  
-    padding:19px; 
-    position: relative;
-           
-  }
+.botoes a {
+  width:620px;
+  height: 120px;
+  color:#FFFA7B;
+  text-decoration: none;  
+  font-family: 'Nova Cut', cursive;
+  font-size:  23px;
+  justify-content:flex-end;
+  background-image: url(../img/botoes-circulares.png);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: 65px;  
+  padding:19px; 
+  position: relative;
+ }
 
 .busca a {
-  width: 384px;
+  width: 200px;
   height:fit-content;
   font-family:'Gemunu Libre', sans-serif;
-  font: size 25px;
+  font-size: 25px;
   text-decoration: none;   
   position: absolute;
-  padding: 19px;
+  /*______Essa posição "absolute" ajuda a que se posicione sob a div botoes, que para isso teve q ser definida como "relative"_______*/
   color: black;
   background-image: url(../img/Busca.png);
   background-repeat: no-repeat;
-  background-size:auto;
-  background-position-x:center;
-  margin-top: 30px;
-  
- 
+  background-size:contain;
+  margin-top: 20px;
+  justify-content: flex-end;
+  right: 80px;
+  /*_______consegui alinhar o busca a direita usando o comando right, para desliza-lo para onde precisava. com o "position absolute" ele estava alinhado à esquerda dos botoes*/
 }
 
 /*----------fim da sessao header---------- */
 
 .banner{ 
-height: 230px;
-width: 100%;
-background-image:url(../img/Banner.png);
-background-repeat: no-repeat;
-justify-content: center;
+  height: 230px;
+  width: 100%;
+  background-image:url(../img/Banner.png);
+  background-repeat: no-repeat;
+  justify-content: center;
 }
   
 .texto-banner {
-color:white;
-font-family: 'Gemunu Libre',sans-serif;
-font-size: 25px;
-font-weight: 300;
-justify-content: space-between;
+  color:white;
+  font-family: 'Gemunu Libre',sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  justify-content: space-between;
 }
 
 .texto-banner h2{
@@ -98,23 +89,45 @@ justify-content: space-between;
 }
 
 .posicao-texto{
-justify-content:center;
-align-items:center;
+  justify-content:center;
+  align-items:center;
 }
 
 /* -------- fim da sessao banner---------*/
 
-.conteudo-body h2{
-font-family: 'Nova Cut', cursive;
-font-size: 30px;
+body{
+  background-color: #EEFFFD;
+}
+.conteudo-body h2{  
+  font-family: 'Nova Cut', cursive;
+  font-size: 30px;
 }
 
 .conteudo-body p{
-font-family:'Gemunu libre', sans-serif;
-font-size: 25px;
+  font-family:'Gemunu libre', sans-serif;
+  font-size: 25px;
 }
 
-.conteudo-body o-que-e{
+.conteudo-body {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
 
+footer a {
+ text-decoration: none;
+ justify-content: space-between;
+}
 
+footer{
+  height: 150px;
+  background-color: #C4C4C4;
+  background-image: url(../img/Footer\ -\ Padrao.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+
+.assinatura p{
+ font-size: 15px;
 }
