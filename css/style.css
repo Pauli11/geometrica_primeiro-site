@@ -21,13 +21,15 @@
 }
 
 header {
-  width: 1200px;
+  width: 100%;
   background-color:#EEFFFD; 
   height: 150px;
   background-image: url(../img/header-novo.png);
   background-repeat:no-repeat;
   background-size: 100%;
   background-position-y: top;
+  display: flex;
+  justify-content: center;
 }
 
 .botoes a {
@@ -44,10 +46,10 @@ header {
   background-size: 65px;  
   padding:19px; 
   position: relative;
- }
+}
 
 .busca a {
-  width: 200px;
+  width: 185px;
   height:fit-content;
   font-family:'Gemunu Libre', sans-serif;
   font-size: 25px;
@@ -60,7 +62,7 @@ header {
   background-size:contain;
   margin-top: 20px;
   justify-content: flex-end;
-  right: 80px;
+  right: 85px;
   /*_______consegui alinhar o busca a direita usando o comando right, para desliza-lo para onde precisava. com o "position absolute" ele estava alinhado à esquerda dos botoes*/
 }
 
@@ -72,6 +74,7 @@ header {
   background-image:url(../img/Banner.png);
   background-repeat: no-repeat;
   justify-content: center;
+  display:flex;
 }
   
 .texto-banner {
@@ -114,6 +117,43 @@ body{
   margin: auto;
 }
 
+
+.o-que-e{
+  margin-top: 15px;
+}
+
+.como-jogar{
+  margin-top: 15px;
+}
+
+.livros{
+  margin-top: 15px;
+}
+.forum{
+  margin-top: 15px;
+}
+
+.row{
+  height:max-content;
+}
+.lancamentos-container {
+  margin-top: 15px;
+  margin-bottom: 35px;
+  }
+
+ .lancamentos-container img{
+   width: 320px;
+   height: 320px;
+     
+ }
+
+.lojinha{
+  margin-bottom: 15px;
+}
+
+
+/*_____________fim do conteúdo_______________________________*/
+
 footer a {
  text-decoration: none;
  justify-content: space-between;
@@ -122,12 +162,22 @@ footer a {
 footer{
   height: 150px;
   background-color: #C4C4C4;
-  background-image: url(../img/Footer\ -\ Padrao.png);
+  background-image: url(../img/Footer-padrão-NOVO.png);
   background-size: 100%;
   background-repeat: no-repeat;
+  display: flex;
+}
 
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Nova Cut',cursive;
+  font-size: 18px;
+  justify-content: space-around;
 }
 
 .assinatura p{
- font-size: 15px;
+ width: 100%;
+ font-size: 12px;
+ justify-content: center;
 }
