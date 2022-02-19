@@ -9,6 +9,7 @@
     /* o box sizing zera as configuracoes pre definidas dos box do site, assim eu mesma irei configura-los*/
  }
 
+ /*_____________Header____________*/
 .container-grid{
   width: 1200px;
   height: 100%;
@@ -66,7 +67,7 @@ header {
   /*_______consegui alinhar o busca a direita usando o comando right, para desliza-lo para onde precisava. com o "position absolute" ele estava alinhado à esquerda dos botoes*/
 }
 
-/*----------fim da sessao header---------- */
+/*___________Banner___________ */
 
 .banner{ 
   height: 230px;
@@ -96,7 +97,7 @@ header {
   align-items:center;
 }
 
-/* -------- fim da sessao banner---------*/
+/* __________Body_____________*/
 
 body{
   background-color: #EEFFFD;
@@ -104,6 +105,7 @@ body{
 .conteudo-body h2{  
   font-family: 'Nova Cut', cursive;
   font-size: 30px;
+  color: #BF0505;
 }
 
 .conteudo-body p{
@@ -138,7 +140,7 @@ body{
 }
 .lancamentos-container {
   margin-top: 15px;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
   }
 
  .lancamentos-container img{
@@ -152,8 +154,25 @@ body{
 }
 
 
-/*_____________fim do conteúdo_______________________________*/
+/*_____________footer__________________*/
+.container-grid-textos{
+display: flex;
+font-family: 'Nova Cut',cursive;
+font-size: 18px;
+justify-content: space-between;
+}
 
+.linha2 {
+display: flex;
+font-family: 'Nova Cut',cursive;
+font-size: 18px;
+}
+*/
+.flex-container{
+  flex-direction: column;
+}
+
+/*
 footer a {
  text-decoration: none;
  justify-content: space-between;
@@ -166,18 +185,54 @@ footer{
   background-size: 100%;
   background-repeat: no-repeat;
   display: flex;
-}
-
-.flex-container{
-  display: flex;
-  flex-direction: column;
   font-family: 'Nova Cut',cursive;
   font-size: 18px;
-  justify-content: space-around;
+  }
+
+
+.footer-box{
+  font-family: 'Nova Cut',cursive;
+  font-size: 18px;
+  padding: 1%;
+  flex-direction: column;
+}
+ 
+footer ul {
+  padding: 0;
 }
 
-.assinatura p{
- width: 100%;
- font-size: 12px;
- justify-content: center;
+footer li {
+  list-style: none;
 }
+
+footer .img {
+  width: 15px;
+  height: 15px;
+}
+
+footer .wrapper:after{
+  clear: both;
+  content: "";
+  display: block;
+}
+
+footer .list a{
+  transition: 5s;
+}
+footer .list a hover{
+  color: #BF0505;
+}
+
+footer .list li::after{
+  clear:both;
+  content:"";
+  display: block;
+}
+
+.assinatura{
+  font-size:10px;
+  justify-content: center;
+}
+*/
+
+
