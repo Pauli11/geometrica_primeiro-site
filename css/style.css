@@ -43,6 +43,7 @@ header {
   justify-content:flex-end;
   background-image: url(../img/botoes-circulares.png);
   background-position-x: center;
+  background-position-y:center;
   background-repeat: no-repeat;
   background-size: 65px;  
   padding:19px; 
@@ -102,7 +103,7 @@ header {
 /* __________Body_____________*/
 
 body{
-  background-color: #EEFFFD;
+  background-color:#FFFBA6;
 }
 
 .conteudo-body {
@@ -177,6 +178,9 @@ body{
 .lojinha img {
   padding: 8px;
 }
+.ilustracoes{
+  display: flex;
+}
 .livros{  
   width: max-content;
   font-family: 'Nova Cut', cursive;
@@ -218,6 +222,7 @@ footer{
   width: 1200px;
   height: 100%;
   margin: auto;
+  flex-wrap:wrap;
    
 }
 
@@ -256,6 +261,7 @@ footer{
 
  .barras{
   display: none;
+  width: 30px;
 }
 /*___Configuração para tela entre 769px e 1200px (tablet)_________*/
 /*___ Acima de 1200px é considerado desktop, portanto segue a configuração já feita acima_____*/
@@ -267,37 +273,43 @@ footer{
    .menu a{
      font-size:15px;
    }
+
+   .menu background {
+     size: 15px;
+   };
+
    .logo-botao{
      width:50%;
      height: 50%;
    }
 
-   }  .botoes a {
+   .botoes a {
      width: 50%;
    }
   
  /*___Configuração para tela de até 768px (celular)_________*/
  @media screen and (max-widht:768px) {
-  .barras{
-    display:inline;
-  }
+ 
+.barras{
+    display:inline-block;
+}
 
-  .menu {
+.menu {
     display: none;
-  }
+}
 
-  .botoes{
+.botoes{
     display:none;
-  }
-  .lancamentos-container{
+}
+
+.lancamentos-container{
     justify-items: auto;
-  }
+}
 
-  .blocoInfos a {
+.blocoInfos a {
     font-size: 15px;
-  }
-  
-  
+}
+ 
+}
 
-  /*nao apagar essa chave de baixo*/
- }
+
