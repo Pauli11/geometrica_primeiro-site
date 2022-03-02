@@ -36,7 +36,7 @@ header {
   width:100%;
   margin-top: auto;
   position:relative;
-  color:#FFFA7B;
+  color:#fdf973fa;
   text-decoration: none;  
   font-family: 'Nova Cut', cursive;
   font-size:  23px;
@@ -57,14 +57,14 @@ header {
   font-size: 25px;
   text-decoration: none;   
   position: absolute;
-  /*______Essa posição "absolute" ajuda a que se posicione sob a div botoes, que para isso teve q ser definida como "relative"_______*/
+  /*Essa posição "absolute" ajuda a que se posicione sob a div botoes, que para isso teve q ser definida como "relative"_______*/
   color: black;
   background-image: url(../img/Busca.png);
   background-repeat: no-repeat;
   background-size:auto;
   margin-top: 20px;
 
-  /*_______consegui alinhar o busca a direita usando o comando right, para desliza-lo para onde precisava. com o "position absolute" ele estava alinhado à esquerda dos botoes*/
+  /*consegui alinhar o busca a direita usando o comando right, para desliza-lo para onde precisava. com o "position absolute" ele estava alinhado à esquerda dos botoes*/
 }
 
 /*___________Banner___________ */
@@ -149,9 +149,6 @@ body{
   width: max-content;
  }
 
-
-
-
 .lancamentos-container {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -172,8 +169,7 @@ body{
   color: #BF0505;
   justify-content: space-between;
   width: fit-content;
- 
-}
+ }
 
 .lojinha img {
   padding: 8px;
@@ -258,15 +254,21 @@ footer{
   justify-content: center;
   text-align: center;
  }
-
  .barras{
   display: none;
-  width: 30px;
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+
+}
+
+.posicionamento-header{
+  position: relative;
 }
 /*___Configuração para tela entre 769px e 1200px (tablet)_________*/
 /*___ Acima de 1200px é considerado desktop, portanto segue a configuração já feita acima_____*/
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1200px) {
    .container-grid{
      width:90%;
    }
@@ -276,7 +278,7 @@ footer{
 
    .menu background {
      size: 15px;
-   };
+   }
 
    .logo-botao{
      width:50%;
@@ -291,25 +293,27 @@ footer{
  @media screen and (max-widht:768px) {
  
 .barras{
-    display:inline-block;
+  display:inline-block;
+  width: 30px;
+  height: 30px;
 }
 
-.menu {
-    display: none;
-}
+.menu{
+  display: none;
+  flex-direction: column;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  background-color: #FFFBA6;
+  color: black;
 
-.botoes{
-    display:none;
-}
 
-.lancamentos-container{
-    justify-items: auto;
-}
 
 .blocoInfos a {
     font-size: 15px;
 }
- 
-}
 
+
+ /* NAO APAGAR DESSA LINHA  pra BAIXO*/
+}
 
