@@ -24,12 +24,13 @@
 header {
   width: 100%;
   background-color:#EEFFFD; 
-  height: 160px;
+  height: 250px;
   background-image: url(../img/header-novo.png);
   background-repeat:no-repeat;
   background-size: 100%;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .menu a {
@@ -79,11 +80,10 @@ header {
   
 }
   
-.texto-banner {
+.texto-banner p,a {
   color:white;
   font-family: 'Gemunu Libre',sans-serif;
-  font-size: 25px;
-  font-weight: 300;
+  font-size:  25px;
   justify-content: space-between;
   text-decoration: none;
 }
@@ -91,6 +91,7 @@ header {
 .texto-banner h2{
   color: #fffa7b;
   font-size: 50px;
+  font-family: 'Gemunu Libre',sans-serif;
   font-weight: bold;
   text-decoration: none;
 }
@@ -113,6 +114,7 @@ body{
   justify-content:space-between;
   align-items: center; 
 }
+
 .conteudo-body h2{  
   font-family: 'Nova Cut', cursive;
   font-size: 30px;
@@ -174,9 +176,11 @@ body{
 .lojinha img {
   padding: 8px;
 }
+
 .ilustracoes{
   display: flex;
 }
+
 .livros{  
   width: max-content;
   font-family: 'Nova Cut', cursive;
@@ -233,27 +237,59 @@ footer{
  .titulo-redes p{
   display: block;
   position:relative;
-  padding: 8px;
+  color: black;
+  margin-bottom: 0px;
   
  }
+
  .links-redes{
    display: flex;
    flex-direction: row;
  }
 
 
- .links-redes img{
+.links-redes img{
    padding: 8px;
-   width: 65px;
-   height: 60px;     
+   width: 45px;
+   height: 40px;     
  }
+
+
+.newsletter{
+   font-size: 20px;
+}
+
+.newsletter form {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.newsletter input[type="email"] {
+    height: 40px;
+    width: 200px;
+  
+  }
+
+.newsletter input[type="email"]::placeholder{
+  color: gray;
+  font-weight:lighter;
+}
+button{
+  width: 120px;
+  color:black;
+  background-color: #fffa7b ;
+  border: none;
+}
 
  .assinatura p{
   width: 100%;
   font-size: 15px;
   justify-content: center;
   text-align: center;
+  color: black;
  }
+
+
  .barras{
   display: none;
   width: 60px;
@@ -292,6 +328,7 @@ footer{
  /*___Configuração para tela de até 768px (celular)_________*/
  @media screen and (max-widht:768px) {
  
+
 .barras{
   display:inline-block;
   width: 30px;
@@ -306,14 +343,19 @@ footer{
   position: absolute;
   background-color: #FFFBA6;
   color: black;
-
+}
 
 
 .blocoInfos a {
     font-size: 15px;
 }
 
+.links-redes{
+width: fit-content;
+height: fit-content;
+
+}
+
 
  /* NAO APAGAR DESSA LINHA  pra BAIXO*/
 }
-

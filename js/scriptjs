@@ -1,0 +1,10 @@
+//function mostrarPopup(){
+       // window.alert("Seja bem-vinde!")
+        //com somente o "alert" ja funcionaria, porém 
+//}
+
+let email = document.getElementById (campo-email);
+function enviarEmail(){
+    let emailDigitado = email.value;    
+
+}
