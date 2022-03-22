@@ -24,7 +24,7 @@
 header {
   width: 100%;
   background-color:#EEFFFD; 
-  height: 250px;
+  height: 197px;
   background-image: url(../img/header-novo.png);
   background-repeat:no-repeat;
   background-size: 100%;
@@ -142,6 +142,7 @@ body{
 
 .baixar{
   margin-top: 15px;
+  margin-left: 25px;
   width: max-content;
 }
 
@@ -310,6 +311,7 @@ button{
    }
    .menu a{
      font-size:15px;
+     background-size: 70%;
    }
 
    .menu background {
@@ -358,4 +360,5 @@ height: fit-content;
 
 
  /* NAO APAGAR DESSA LINHA  pra BAIXO*/
+}
 }
