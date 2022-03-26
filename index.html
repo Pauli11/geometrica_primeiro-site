@@ -19,7 +19,7 @@
         <link rel="stylesheet"  href="css/style.css">
         <!--Essa linha acima conecta o css no html-->
     </head>
-        <body onload="mostrarPopup()">
+        <body onload="enderizarLivros()"> 
 
             <header>
                 <div class="container-grid posicionamento-header">
@@ -31,13 +31,12 @@
                     </div>
                    
                     <nav id="menu" class="menu">
-                        <button id="btn-mobile">Menu</button>
+                         <!-- <button id="btn-mobile">Menu</button>  aqui estava testando um tutorial, mas desisti -->
+                                            
+                            <a href="#">Login</a>
+                            <a href="#">Jogar</a>
+                            <a href ="#">Blog</a>
                         
-                        <div class="botoes">
-                            <a href="login.html">Login</a>
-                            <a href="jogar.html">Jogar</a>
-                            <a href ="pagina_blog.html">Blog</a>
-                        </div>
                          <!--   retirei a busca, pois não haverá tempo hábil para resolver as questões, fica para um momento de refatoração do site, posteriormente à entrega das atividades.
                          <div class="busca">
                             <div class= "row">
@@ -48,7 +47,8 @@
                     </nav>
                 </div>
                    
-                    <a href="" onclick="mostrarMenu()"><img class="barras" src="img/menu.png" alt= "menu de barras"></a>
+                    <a href="#" id="barras"><img class="barras" src="img/menu.png" alt= "menu de barras"></a>
+                     <!-- <a href="#" onclick="mostrarMenu()"><img class="barras" src="img/bars.svg" alt="Menu de Barras"></a> -->
             </div>              
             </header>
             <div class="banner">
@@ -122,10 +122,14 @@
             </div>  
 
             <div class ="col-md-12 col-lg-4">    
-                 <section class= "livros">
+                <section  id= listaLivros class= "livros">
                     <h2>Livros</h2>
-                     <img src="img/ilustra_livro.jpg" alt="foto_livro"    width="210px" height="175px">
-                 </section>  
+                    <div class=livrosVenda>
+                        <h3>A geometria oriental - simbologias</h3>
+                        <img src="img/ilustra_livro.jpg" alt="foto_livro"    width="210px" height="175px">
+                        <p>Aprofunde seu conhecimento sobre o tema</p>
+                    </div>  
+                 </section> 
             </div>
         </div>
     </div>
@@ -176,6 +180,7 @@
         }
     }    
 </script>
+<script src="js/jquery-3.6.0.js"></script>
 <script src="js/scriptjs"></script>
 <!-- Acima está o caminhi que se faz pra linkar o arquivo js externo que esta na pasta js ao site/home-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
