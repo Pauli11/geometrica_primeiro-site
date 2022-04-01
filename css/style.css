@@ -2,8 +2,8 @@
 
 *{
   /*O asterisco abaixo indica que as configurações nele contidas valem para todo o site */
-    margin: o;
-    padding: o;
+    margin: 0;
+    padding: 0;
     /*padding mede a distancia entre o conteudo de um elemento e a sua borda. No caso deixamos zerado por padrao para todos  */
     box-sizing:border-box ;
     /* o box sizing zera as configuracoes pre definidas dos box do site, assim eu mesma irei configura-los*/
@@ -78,6 +78,7 @@ header {
   background-repeat: no-repeat;
   justify-content: center;
   display:flex;
+  
   
 }
   
