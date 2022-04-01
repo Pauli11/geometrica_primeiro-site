@@ -22,7 +22,7 @@ $(document).ready(function() {
         //com somente o "alert" ja funcionaria, porém 
 //}
 
-let email = document.getElementById ("campo-email")
+let email = document.getElementById ("email")
 
 function enviarEmail(){
     let emailDigitado = email.value;   
