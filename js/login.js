@@ -13,9 +13,20 @@ function logar (){
     }
     
 }
+$(document).ready(function(){
+        $("fieldset").mouseenter (function(){
+            $(this).css("background"," #C4C4C4");
+        });
+})
 
-/* let email = document.getElementById ("email");
-function enviarEmail(){
-    let emailDigitado = email.value;   
-    console.log(emailDigitado);}*/
+$(document).ready(function(){
+    $("fieldset").mouseleave (function(){
+        $(this).css("background","#fffa7b"); 
+    });
+})
 
+
+
+
+
+//
