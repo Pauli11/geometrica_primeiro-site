@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
   $("#barras").click(function() {
-     $("#menu").toggleClass("#menu-ativo")
+     $("#menu").toggleClass("menu-ativo")
 
     })
 

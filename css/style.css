@@ -346,26 +346,33 @@ button{
      
   
  /*___Configuração para tela de até 768px (celular)_________*/
- @media screen and (max-widht:768px) {
+ @media screen and (max-width:768px) {
  
 .barras{
   display: inline-block;
-  width: 30px;
+  width: 45px;
  
 }
 
 .menu{
   display: none;
   flex-direction: column;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   position: absolute;
   background-color: #FFFBA6;
-  color: black;
+  
+}
+
+.menu a{
+  background-image: none;
+  color: #BF0505;
+  padding: 5px;
 }
 
 .menu-ativo{
   display: flex;
+  position: relative; 
 }
 
 
